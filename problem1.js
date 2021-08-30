@@ -40,7 +40,7 @@ const badSmoothie = async () => {
     } catch (err) {
         console.log(err)
         //return ` 😇 We are going to be fine....`  // this will store in val
-        throw`🐩  it's broken`    //this will store in err
+        throw `🐩  it's broken`    //this will store in err
 
     }
 }
@@ -48,9 +48,13 @@ const badSmoothie = async () => {
 
 
 makeSmoothie().then(log)
-console.log("🦁 =============================🦁 ")  
+console.log("🦁 =============================🦁 ")
 
 badSmoothie()
-.then(val => console.log({ val}))    // if return it's will store in val **
-.catch(err => console.log({err}))    // if thorw it's will store in catch **
+    .then(val => console.log({ val }))    // if return it's will store in val **
+    .catch(err => console.log({ err }))    // if thorw it's will store in catch **
+
+
+
+
 
